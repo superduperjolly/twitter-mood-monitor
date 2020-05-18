@@ -18,4 +18,4 @@ EXPOSE 5000
 ENTRYPOINT ["python"]
 
 # Write the default command here
-# CMD
+CMD ["run.py"]
