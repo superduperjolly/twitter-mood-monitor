@@ -11,11 +11,16 @@ OUTPUT_CSV = "data/processed_tweets.csv"
 def parse_hashtags(df):
     """Extracts the hashtags from the tweets.
     The output is an added column `hashtags` in
-    the dataframe. All hashtags are in a list."""
+    the dataframe. All hashtags are in a list.
+
+    Example:
+    tweet: "#grandma is the #best"
+    output: "#grandma,#best"
+    """
     
     # Find all the hashtags in the tweet
     df["hashtags"] = df.text.apply(
-        lambda tweet: [w for w in tweet.split() if w.startswith("#")]
+        lambda tweet: ",".join([w for w in tweet.split() if w.startswith("#")])
     )
 
     return df
@@ -49,6 +54,5 @@ def data_prep_pipeline(filepath, output_path):
     return tweets_df
 
 
-
 data_prep_pipeline(INPUT_CSV, OUTPUT_CSV)
-print(f"Your processed tweets are saved in {OUTPUT_CSV}")
+print(f"Your processed tweets from {INPUT_CSV} are saved in {OUTPUT_CSV}")
