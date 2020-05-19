@@ -10,6 +10,7 @@ flake8 = "*"
 [packages]
 dash = "==1.12.0"
 pandas = "*"
+plotly = "*"
 
 [requires]
 python_version = "3.6.1"
