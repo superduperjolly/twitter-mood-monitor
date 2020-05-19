@@ -1,4 +1,4 @@
-FROM python:3.6.0-slim
+FROM python:3.6.1-slim
 
 # Install packages
 RUN pip install pipenv==2018.11.26
