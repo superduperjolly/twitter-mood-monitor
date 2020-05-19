@@ -16,3 +16,9 @@ This is to build the image for the app. Then to run the app,
 make run
 ```
 Browse http://0.0.0.0:4000 to see.
+
+## Planned analysis
+
++ TIME SERIES - tweets volume per hour
++ STACKED COLUMN CHART - tweets volume per hour with cities
++ TIME SERIES - hashtags volume per hour
