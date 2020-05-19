@@ -1,10 +1,18 @@
-# A simple app that shows the magnitude of tweets in a certain geographical
-# location in Manila
+# A simple tweets analysis app
 
-## Parts
+## Data scope
 
-This app is in two parts:
-+ Heat map for where the majority of tweets are
-+ Heat map for where the majority of tweets are via hashtags
+The accumulated tweets are from September 27, 2019 boxed in
+Metro Manila coordinates. This was a friday night and the scraping
+started at 6PM to 12MN. 
 
-
+## How to use
+To start the app, run
+```
+make build
+```
+This is to build the image for the app. Then to run the app,
+```
+make run
+```
+Browse http://0.0.0.0:4000 to see.
