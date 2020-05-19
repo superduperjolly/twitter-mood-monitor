@@ -3,9 +3,7 @@ the app."""
 
 import pandas as pd
 
-
-INPUT_CSV = "data/tweets.csv"
-OUTPUT_CSV = "data/processed_tweets.csv"
+from config import INPUT_CSV, OUTPUT_CSV
 
 
 def parse_hashtags(df):
